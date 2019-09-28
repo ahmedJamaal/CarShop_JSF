@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <!--<h:outputStylesheet library = "css" name = "mystyle.css"  />
+        --><h:outputStylesheet library = "css" name = "sty.css"  /> 
+        <title>Login</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+
+            <div class="pages">
+            <h:commandButton value="HOME" action="Admin.xhtml" class="loginbtn"></h:commandButton> 
+            <h:commandButton value="NEW CAR" action="Admin.xhtml" class="loginbtn"></h:commandButton> 
+            <h:commandButton value="USED CAR" action="Admin.xhtml" class="loginbtn"></h:commandButton> 
+            <h:commandButton value="MOTORBIKE" action="Admin.xhtml" class="loginbtn"></h:commandButton> 
+            <h:commandButton value="BLOG" action="Admin.xhtml" class="loginbtn"></h:commandButton> 
+
+            </div>
+        </h:form>
+        
+            <h:form>
+
+            <div class="links">
+                <center>   
+            <h:commandButton value="Add New Car" action="Admin.xhtml" class="act"></h:commandButton> 
+            <h:commandButton value="Edit New Car" action="Admin.xhtml" class="act"></h:commandButton> 
+            <h:commandButton value="Remove New Car" action="Admin.xhtml" class="act"></h:commandButton> 
+            
+                </center>
+            </div>
+        </h:form>
+        <br></br> <br></br>
+        <div id="adminform">
+            
+            <form id="home">
+              
+    	<center><h7>Add New Car</h7></center>
+        <hr></hr>
+       
+        <h:outputLabel for="Brand">Brand Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="Brand" value="#{user.name}" />
+         
+         <h:outputLabel for="model">Model Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="model" value="#{user.name}" />
+         
+        <h:selectOneMenu value="#{user.favNumber1}">
+   			<f:selectItem itemValue="null" itemLabel="-Select Type" />
+   			<f:selectItem itemValue="Saden" itemLabel="Saden" />
+   			<f:selectItem itemValue="HatchBack" itemLabel="HatchBack" />
+   			<f:selectItem itemValue="SUV" itemLabel="SUV" />
+   			<f:selectItem itemValue="Coupe" itemLabel="Coupe" />
+                        <f:selectItem itemValue="Convertiable" itemLabel="Convertiable" />
+   		</h:selectOneMenu>
+         <br></br> <br></br>
+         <h:outputLabel for="price">Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="price" value="#{user.name}" />
+         
+         <h:outputLabel for="year">Model Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="year" value="#{user.name}" />
+         <br></br> <br></br>
+         <h:outputLabel for="hp">HorsePower &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="hp" value="#{user.name}" />
+         
+         <h:outputLabel for="cylinder">Number Cylinder &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+         <h:inputText id="cylinder" value="#{user.name}" />
+         
+        <br></br> 
+         <h:selectOneRadio value="">
+             <f:selectItem itemValue="Automatic" itemLabel="Automatic"></f:selectItem>
+             <f:selectItem itemValue="Manual" itemLabel="Manual"></f:selectItem>
+         </h:selectOneRadio>
+         <br></br> <br></br>
+         <h:commandButton value="Login" action="Admin.xhtml" class="loginbtn"></h:commandButton>
+                
+            </form>
+      
+        </div>
+    </h:body>
+</html>
+

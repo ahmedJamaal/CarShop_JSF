@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 24, 2018, 7:52:32 PM
+    Author     : Ahmed
+*/
+body
+{
+    font-family: sans-serif;
+    
+}
+.pages
+{
+    font-family: sans-serif;
+    font-size: 35px;
+    
+   
+}
+.adminbtn
+{
+    width: 15%;
+    height: 90px;
+    font-size: 35px;
+    margin-right: 55px;
+    margin-left: 10px;
+    background-color: #A6723F;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 1%;
+    border-radius: 10px;
+    text-decoration:  none;
+}
+.act
+{
+  
+    height: 45px;
+    font-size: 35px;
+    margin-right: 55px;
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    color: #F35A6C;
+    border: none;
+    margin-top: 0%; 
+    border-radius: 15px;
+    text-decoration:  none;
+}
+.act:hover
+{
+    background-color: #000000;
+}
+.adminbtn:hover
+{
+    color: #000000;
+}
+#adminform h7
+{
+    background-color: #FFFFFF;
+    color: #F35A6C;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+#adminform
+{
+   
+    background-color: #F15B5B;
+    width: 95%;
+    height: 90%;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 2.5%;
+    font-weight: bold;
+   
+    
+   
+    
+  /*left: 2.5%;
+  right: 2.5%;*/
+  
+    
+}
+.savebtn
+{
+    width: 15%;
+    height: 60px;
+    font-size: 35px;
+    margin-right: 55px;
+    margin-left: 10px;
+    background-color: #F35A6C;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 1%;
+}
+.savebtn:hover
+{
+    color: #000000;
+    
+}
+
+.detials
+{
+    width: 50%;
+    height: 70px;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    resize: none;
+}
+.detials:focus
+{
+    background-color: #A63F3F;
+    color: #FFFFFF;  
+}
+
+.submitbt
+{
+    width: 15%;
+    height: 60px;
+    font-size: 35px;
+    margin-right: 55px;
+    margin-left: 10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+   
+    margin-bottom: 2%;
+}
+.submitbt:hover
+{
+     
+    color: #F35A6C;
+    
+}
+.model, .Brand,.price ,.year,.hp ,.year,.cylinder,.km
+{
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    height: 35px;
+    width: 16%;
+    font-size: 22px;
+    /*margin-left: 5%;
+      */  
+}
+.formin
+{
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    height: 35px;
+    width: 25%;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left:  10%;
+}
+.model:focus, .Brand:focus,.formin:focus,.price:focus ,.year:focus ,.hp:focus ,.year:focus ,.cylinder:focus,.km:focus
+{
+    background-color: #A63F3F;
+    color: #FFFFFF;  
+}
+hr
+{
+    color: #FFFFFF;
+  
+}

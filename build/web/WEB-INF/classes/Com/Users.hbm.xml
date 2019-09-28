@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2019 5:52:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Com.Users" table="USERS" schema="CARSHOP" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="fname" type="string">
+            <column name="FNAME" length="20" />
+        </property>
+        <property name="lname" type="string">
+            <column name="LNAME" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="30" unique="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="30" />
+        </property>
+        <property name="gender" type="string">
+            <column name="GENDER" length="10" />
+        </property>
+        <property name="privilegeId" type="java.lang.Long">
+            <column name="PRIVILEGE_ID" precision="10" scale="0" />
+        </property>
+        <set name="blogs" table="BLOG" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ID" precision="10" scale="0" />
+            </key>
+            <one-to-many class="Com.Blog" />
+        </set>
+        <set name="usedCars" table="USED_CAR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ID" precision="10" scale="0" />
+            </key>
+            <one-to-many class="Com.UsedCar" />
+        </set>
+        <set name="usedMotos" table="USED_MOTO" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ID" precision="10" scale="0" />
+            </key>
+            <one-to-many class="Com.UsedMoto" />
+        </set>
+    </class>
+</hibernate-mapping>

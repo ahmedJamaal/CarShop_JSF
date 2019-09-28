@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing:border-box;
+	
+}
+h1{
+		background-color:#FFFFFF;
+		color:#F15B5B;
+		align-items:center;	
+		font-family:"data latin";
+		font-weight:bold;
+		font-size:35px;
+		text-align:center;
+		padding-top:10px;
+		
+		
+		
+}
+p,b,#gender
+{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align-last:center;
+}
+#keep b
+{
+	font-size:18px;
+}
+#sign_form
+{
+	box-sizing:border-box;
+	padding:15px;
+	background-color:#A6723F;
+	position:absolute;
+	left:30%;
+	right:30%;
+	border:1px solid #FFFFFF; 
+	color:#FFFFFF;
+
+	
+}
+#loginform
+{
+	position:absolute;
+	left:32.5%;
+        right: 32.5%;
+	top:70%;
+	border:1px solid #F1F1F1;
+	background:#A6723F;
+	padding:15px;
+}
+#loginform h7
+{
+    background-color: #FFFFFF;
+    color: #F35A6C;
+    font-size: 35px;
+    
+}
+	
+hr {
+    border: 1px solid #000000;
+    margin-bottom: 25px;
+}
+input[type=text],input[type=password],input[type=date]
+{
+	
+	width: 70%;
+    padding: 17px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+	color:#F15B5B
+}
+input[type=text]:focus,input[type=password]:focus
+{
+	background-color:#F2A75C;
+	border:#FBFBFB;
+	color:#FFFFFF;
+}
+label
+{
+    font-size: 35px;
+}
+.registerbtn
+{
+	width: 70%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background:#F15B5B;
+	color:#FFFFFF;
+	font-size:24px;
+}
+.login,.loginbtn
+{
+	width: 70%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background:#F15B5B;
+	color:#FFFFFF;
+	font-size:24px;
+}
+
+.registerbtn:active,.loginbtn:active
+{
+	background-color: #C006F3;
+  	transform: translateY(4px);
+  
+}
+
+a,#keep a{
+	color:#00008B;
+	text-overflow:clip;
+	font-size:25px;
+	text-decoration:none;
+	
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2019 5:52:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Com.UsedCar" table="USED_CAR" schema="CARSHOP" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="users" class="Com.Users" fetch="select">
+            <column name="USER_ID" precision="10" scale="0" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="NAME" length="20" />
+        </property>
+        <property name="model" type="string">
+            <column name="MODEL" length="20" />
+        </property>
+        <property name="type" type="string">
+            <column name="TYPE" length="20" />
+        </property>
+        <property name="price" type="java.lang.Long">
+            <column name="PRICE" precision="10" scale="0" />
+        </property>
+        <property name="year" type="java.lang.Long">
+            <column name="YEAR" precision="10" scale="0" />
+        </property>
+        <property name="hp" type="java.lang.Long">
+            <column name="HP" precision="10" scale="0" />
+        </property>
+        <property name="cylinder" type="java.lang.Long">
+            <column name="CYLINDER" precision="10" scale="0" />
+        </property>
+        <property name="gearbox" type="string">
+            <column name="GEARBOX" length="10" />
+        </property>
+        <property name="km" type="big_decimal">
+            <column name="KM" precision="20" scale="10" />
+        </property>
+        <property name="detials" type="string">
+            <column name="DETIALS" length="32" />
+        </property>
+        <property name="image" type="binary">
+            <column name="IMAGE" />
+        </property>
+    </class>
+</hibernate-mapping>

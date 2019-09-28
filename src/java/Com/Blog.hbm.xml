@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2019 5:52:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Com.Blog" table="BLOG" schema="CARSHOP" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="ID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="users" class="Com.Users" fetch="select">
+            <column name="USER_ID" precision="10" scale="0" />
+        </many-to-one>
+        <property name="tittle" type="string">
+            <column name="TITTLE" length="32" />
+        </property>
+        <property name="decscrtion" type="string">
+            <column name="DECSCRTION" length="64" />
+        </property>
+        <property name="image" type="binary">
+            <column name="IMAGE" />
+        </property>
+        <property name="publishDate" type="date">
+            <column name="PUBLISH_DATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

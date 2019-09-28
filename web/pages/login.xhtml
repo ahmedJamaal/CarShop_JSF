@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <h:outputStylesheet library = "css" name = "mystyle.css"  />
+         <h:outputStylesheet library = "css" name = "login.css"  /> 
+        <title>Login</title>
+    </h:head>
+    <h:body>
+       <div class="cover">
+           
+           <h:graphicImage value="images/signup.jpg" style="width:100%"></h:graphicImage>
+          
+           
+           
+                <div class="text_midel">Please Login</div>
+  </div>
+        
+        
+        <div class="loginform" id="loginform">
+           <h:form>
+		
+             
+            <h:outputLabel for="email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+            <h:inputText id="name-id" value="#{user.name}" />    
+            <br></br>
+            <br></br><br></br>
+           
+                <h:outputLabel for="password">Password&nbsp;&nbsp;&nbsp;</h:outputLabel>  
+                <h:inputSecret id="password-id" value="#{user.password}"/>
+                <br></br>
+         
+                <br><br></br></br>
+            <center>
+            
+        <h:commandButton value="Login" action="Admin.xhtml" class="loginbtn"></h:commandButton>  
+             
+			</center>
+</h:form>
+                    </div>
+        
+        <h:outputLink value="newjsf.xhtml">aaa</h:outputLink>>
+        
+    </h:body>
+</html>
+

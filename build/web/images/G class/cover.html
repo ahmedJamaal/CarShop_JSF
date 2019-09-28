@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+</head>
+
+<body>
+<!--java code Test-->
+<img class="mySlides" src="extracted_frame_0001.jpg" width="100%">
+<img class="mySlides" src="extracted_frame_0001.jpg" width="100%">
+<img class="mySlides" src="extracted_frame_0001.jpg" width="100%">
+<img class="mySlides" src="extracted_frame_0001.jpg" width="100%">
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+	var image=document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("text_midel");
+	var y = document.getElementsByClassName("text_left");
+
+    for (i = 0; i < x.length; i++) {
+       image[i].style.display = "none";
+	   x[i].style.display = "none";
+	   y[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > image.length) 
+	{
+		myIndex = 1
+	}     
+	if (myIndex > x.length) 
+	{
+		myIndex = 1
+	} 
+	if (myIndex > y.length) 
+	{
+		myIndex = 1
+	}    
+	 image[myIndex-1].style.display = "block";    
+    x[myIndex-1].style.display = "block"; 
+	y[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
